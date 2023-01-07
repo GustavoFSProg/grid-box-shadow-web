@@ -36,7 +36,7 @@ function App() {
         return (
           <Card key={item.id} onClick={() => handleCard(item.id)}>
             <p>Titulo: {item.title}</p>
-            <img src={item.image} width="190" alt="imagem" />
+            <img src={item.image} width="170" alt="imagem" />
 
             <p>Preço: {item.price}</p>
           </Card>

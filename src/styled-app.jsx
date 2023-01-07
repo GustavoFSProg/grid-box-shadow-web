@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
- width: 100%;
+ width: 75%;
  
 
   @media screen and (max-width: 800px) {
