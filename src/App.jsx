@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from './server/api'
-import { Container, Wrapper, Card } from './styled-app'
+import { Container, Wrapper, Card, Imagem } from './styled-app'
+import tablet from './assets/tablet.png'
+// import mural from './assets/mural.jpg'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -31,14 +33,15 @@ function App() {
       <h2 style={{fontSize: '36px'}}>Produtos</h2>
       <br />
       <br />
+      <Imagem src="https://picsum.photos/id/1/935/350" alt="imagem" />
     <Container>
       {products.map((item) => {
         return (
           <Card key={item.id} onClick={() => handleCard(item.id)}>
-            <p>Titulo: {item.title}</p>
             <img src={item.image} width="170" alt="imagem" />
+            <p> {item.desc}</p>
 
-            <p>Preço: {item.price}</p>
+            <p>R$ {item.price}</p>
           </Card>
         )
       })}

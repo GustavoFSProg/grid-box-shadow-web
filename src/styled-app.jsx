@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
  width: 75%;
+ margin-top: 5rem;
  
 
   @media screen and (max-width: 800px) {
@@ -35,6 +36,8 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
  height: auto ;
+ /* width: 89%; */
+ /* background: blue; */
 
   }
 `
@@ -45,17 +48,17 @@ export const Card = styled.div`
   /* font-family: 'Prosto One' ; */
   color: #004d00;
  
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+  align-items: flex-start;
+  justify-content: left;
+  width: 86%;
   height: auto;
   background: #d9d9d9;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-top: 13px;
+  padding-bottom: 2px;
+  padding-left: 14px;
+  /* padding-right: 1px; */
   border-radius: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   /* box-shadow:  8px 8px 2px 1px rgba(0, 0, 0, 0.2) ; */
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.3);
   /* box-shadow:  8px 8px 2px 1px black ; */
@@ -66,4 +69,12 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
   }
+`
+export const Imagem = styled.img`
+  
+  @media screen and (max-width: 800px){
+    width: 80%;
+    height: 9rem;
+  }
+
 `
