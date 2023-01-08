@@ -7,7 +7,7 @@ function Routers() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<App />} />
+        <Route path="/" element={<App />} />
         {/* <Route path="/profile" element={<Profile />} /> */}
       </Routes>
     </BrowserRouter>
