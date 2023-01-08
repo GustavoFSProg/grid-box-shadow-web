@@ -19,7 +19,8 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Arima' ;
+  /* font-family: 'Arima' ; */
+  font-family: 'Lucida' ;
   color: #004080;
  /* background: #ccccff; */
  width: 98.8vw;
