@@ -8,7 +8,7 @@ function Profile() {
   const ID = localStorage.getItem('Id')
   async function handleProfile() {
 
-    const { data } = await api.get(`/profile/${ID}`)
+    // const { data } = await api.get(`/profile/${ID}`)
 
     setProducts(data)
 
@@ -17,7 +17,7 @@ function Profile() {
 
   useEffect(() => {
 
-    handleProfile()
+    // handleProfile()
   }, [])
 
 

@@ -15,16 +15,16 @@ function App() {
 
 
   async function handleProducts() {
-    const { data } = await api.get('/get-products')
+    // const { data } = await api.get('/get-products')
 
     setProducts(data)
   }
 
   useEffect(() => {
-    handleProducts()
+    // handleProducts()
   }, [])
 
-  console.log(products)
+  // console.log(products)
 
   return (
     <Wrapper>
