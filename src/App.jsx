@@ -28,7 +28,7 @@ function App() {
 
   return (
     <Wrapper>
-      <h2 style={{fontSize: '36px'}}>Produtos</h2>
+      <h2 style={{ fontSize: '36px' }}>LOJA DE ELETRONICOS</h2>
       <br />
       <br />
       <Imagem src="https://picsum.photos/id/1/935/350" alt="imagem" />

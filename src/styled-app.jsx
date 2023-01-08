@@ -62,7 +62,7 @@ export const Card = styled.div`
   border-radius: 7px;
   /* margin-left: 10px; */
   /* box-shadow:  8px 8px 2px 1px rgba(0, 0, 0, 0.2) ; */
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.3); */
   /* box-shadow:  8px 8px 2px 1px black ; */
   cursor: pointer;
 
