@@ -71,6 +71,8 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 30px ;
+  padding-bottom: 20px;
+
   }
 `
 export const Imagem = styled.img`
