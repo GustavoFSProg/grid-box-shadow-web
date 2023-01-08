@@ -37,9 +37,17 @@ function App() {
         return (
           <Card key={item.id} onClick={() => handleCard(item.id)}>
             <img src={item.image} width="170" alt="imagem" />
+            <div style={{
+              display: 'flex', flexDirection: 'column', width: '87%',
+              // alignItems: 'flex-start',
+              justifyContent: 'left'
+            }}>
+
             <span style={{ marginTop: '13px', marginBottom: '7px' }}> {item.desc}</span>
 
-            <span>R$ {item.price}</span>
+              <span>R$ {item.price}</span>
+            </div>
+
           </Card>
         )
       })}
