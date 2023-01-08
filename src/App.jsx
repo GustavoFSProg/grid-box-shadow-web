@@ -29,7 +29,8 @@ function App() {
   console.log(products)
 
   return (
-    <Wrapper>
+    // <Wrapper>
+    <>
       <h2 style={{fontSize: '36px'}}>Produtos</h2>
       <br />
       <br />
@@ -46,7 +47,9 @@ function App() {
         )
       })}
       </Container>
-    </Wrapper>
+    </>
+
+    // </Wrapper>
 
   )
 }

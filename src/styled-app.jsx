@@ -4,9 +4,8 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
- width: 75%;
- margin-top: 5rem;
- 
+  width: 75%;
+  margin-top: 5rem;
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -19,32 +18,28 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Arima 200' ;
+  font-family: 'Arima 200';
   color: #004080;
- /* background: #ccccff; */
- width: 98.8vw;
- height: auto ;
- align-items: center ;
- justify-content: center ;
+  /* background: #ccccff; */
+  width: 98.8vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 
-   padding-bottom: 80px;
+  padding-bottom: 80px;
 
-z-index: 999;
-
-
+  z-index: 999;
 
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- height: auto ;
- margin-top: 50px;
- /* width: 89%; */
- /* background: blue; */
-z-index: 999;
-
-
+    height: auto;
+    margin-top: 50px;
+    /* width: 89%; */
+    /* background: blue; */
+    z-index: 999;
   }
 `
 
@@ -54,7 +49,7 @@ export const Card = styled.div`
   /* font-family: 'Prosto One' ; */
   color: #004080;
   font-size: 1rem;
- 
+
   align-items: flex-start;
   justify-content: left;
   width: 86%;
@@ -78,10 +73,8 @@ export const Card = styled.div`
   }
 `
 export const Imagem = styled.img`
-  
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     width: 80%;
     height: 9rem;
   }
-
 `
