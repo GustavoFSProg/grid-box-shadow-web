@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: auto;
-    margin-top: 35px;
+    margin-top: 20px;
     /* width: 89%; */
     /* background: blue; */
     z-index: 999;
