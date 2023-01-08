@@ -19,8 +19,8 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Rubik Bubbles' ;
-  color: #008000;
+  font-family: 'Arima' ;
+  color: #004080;
  /* background: #ccccff; */
  width: 98.8vw;
  height: auto ;
@@ -46,7 +46,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   /* font-family: 'Prosto One' ; */
-  color: #004d00;
+  color: #004080;
  
   align-items: flex-start;
   justify-content: left;
@@ -54,7 +54,7 @@ export const Card = styled.div`
   height: auto;
   background: #d9d9d9;
   padding-top: 13px;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
   padding-left: 14px;
   /* padding-right: 1px; */
   border-radius: 10px;
