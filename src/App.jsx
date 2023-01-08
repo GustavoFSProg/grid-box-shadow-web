@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Header from './components/Header/Header'
 import api from './server/api'
 import { Container, Wrapper, Card, Imagem } from './styled-app'
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <Wrapper>
+      <Header />
       <h2 style={{ fontSize: '23px' }}>LOJA DE ELETRONICOS</h2>
       <br />
       <br />
