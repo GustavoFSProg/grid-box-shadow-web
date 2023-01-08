@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from './server/api'
 import { Container, Wrapper, Card, Imagem } from './styled-app'
-import tablet from './assets/tablet.png'
-// import mural from './assets/mural.jpg'
 
 function App() {
   const [products, setProducts] = useState([])
