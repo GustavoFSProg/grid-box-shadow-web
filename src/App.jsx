@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from './server/api'
-import { Container, Wrapper, Card, Imagem } from './styled-app'
+import { Imagem } from './styled-app'
 import tablet from './assets/tablet.png'
-// import mural from './assets/mural.jpg'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -35,7 +34,7 @@ function App() {
       <br />
       <br />
       <Imagem src="https://picsum.photos/id/1/935/350" alt="imagem" />
-    <Container>
+      {/* <Container>
       {products.map((item) => {
         return (
           <Card key={item.id} onClick={() => handleCard(item.id)}>
@@ -46,7 +45,7 @@ function App() {
           </Card>
         )
       })}
-      </Container>
+      </Container> */}
     </>
 
     // </Wrapper>
