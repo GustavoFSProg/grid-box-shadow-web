@@ -72,6 +72,8 @@ export const Card = styled.div`
     justify-content: center;
     margin-bottom: 30px ;
   padding-bottom: 20px;
+  padding-left: 3px;
+
 
   }
 `
