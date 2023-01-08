@@ -15,23 +15,23 @@ function App() {
 
 
   async function handleProducts() {
-    // const { data } = await api.get('/get-products')
+    const { data } = await api.get('/get-products')
 
     setProducts(data)
   }
 
   useEffect(() => {
-    // handleProducts()
+    handleProducts()
   }, [])
 
-  // console.log(products)
+  console.log(products)
 
   return (
     <Wrapper>
       <h2 style={{fontSize: '36px'}}>Produtos</h2>
       <br />
       <br />
-      {/* <Imagem src="https://picsum.photos/id/1/935/350" alt="imagem" /> */}
+      <Imagem src="https://picsum.photos/id/1/935/350" alt="imagem" />
       <Container>
       {products.map((item) => {
         return (
