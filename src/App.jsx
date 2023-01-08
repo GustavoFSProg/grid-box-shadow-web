@@ -29,7 +29,8 @@ function App() {
 
   return (
     <Wrapper>
-      <Header />
+      <Header />,
+
       <h2 style={{ fontSize: '23px' }}>LOJA DE ELETRONICOS</h2>
       <br />
       <br />

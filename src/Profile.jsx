@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import api from './server/api'
+import Header from './components/Header/Header'
+
 
 function Profile() {
   const [product, setProducts] = useState({})
@@ -22,18 +24,19 @@ function Profile() {
 
 
   return (
+    <>
+      <Header />
+
     <div
       style={{
         display: 'flex',
         width: '100vw',
+          height: '100vh',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
       }}
-    >
-      <Link to="/">
-        <h3>Home</h3>
-      </Link>
+      >
       <h1>
         PROFILE
       </h1>
@@ -56,7 +59,9 @@ function Profile() {
         </h2>
 
       </p>
-    </div>
+      </div>
+    </>
+
   )
 }
 
