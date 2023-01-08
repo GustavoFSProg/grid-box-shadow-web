@@ -52,6 +52,8 @@ function Profile() {
           R$ {product.price}
         </h2>
 
+          <button>Comprar</button>
+
       </p>
       </div>
     </>
