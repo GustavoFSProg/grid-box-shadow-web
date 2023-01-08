@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Arima' ;
+  font-family: 'Arima 200' ;
   color: #004080;
  /* background: #ccccff; */
  width: 98.8vw;
@@ -28,6 +28,9 @@ export const Wrapper = styled.div`
  justify-content: center ;
 
    padding-bottom: 80px;
+
+z-index: 999;
+
 
 
   @media screen and (max-width: 800px) {
@@ -39,6 +42,8 @@ export const Wrapper = styled.div`
  margin-top: 50px;
  /* width: 89%; */
  /* background: blue; */
+z-index: 999;
+
 
   }
 `
