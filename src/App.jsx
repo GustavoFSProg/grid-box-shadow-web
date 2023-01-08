@@ -37,7 +37,7 @@ function App() {
         return (
           <Card key={item.id} onClick={() => handleCard(item.id)}>
             <img src={item.image} width="170" alt="imagem" />
-            <span style={{ marginTop: '10px' }}> {item.desc}</span>
+            <span style={{ marginTop: '13px', marginBottom: '7px' }}> {item.desc}</span>
 
             <span>R$ {item.price}</span>
           </Card>
