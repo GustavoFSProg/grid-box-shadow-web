@@ -48,6 +48,7 @@ export const Card = styled.div`
   flex-direction: column;
   /* font-family: 'Prosto One' ; */
   color: #004080;
+  font-size: 1rem;
  
   align-items: flex-start;
   justify-content: left;
@@ -58,7 +59,7 @@ export const Card = styled.div`
   padding-bottom: 10px;
   padding-left: 14px;
   /* padding-right: 1px; */
-  border-radius: 10px;
+  border-radius: 7px;
   /* margin-left: 10px; */
   /* box-shadow:  8px 8px 2px 1px rgba(0, 0, 0, 0.2) ; */
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.3);
