@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import api from './server/api'
 import Header from './components/Header/Header'
 
@@ -37,12 +36,7 @@ function Profile() {
         justifyContent: 'center',
       }}
       >
-      <h1>
-        PROFILE
-      </h1>
-      {/* <h3>{ID}</h3> */}
-      <br />
-      <br />
+
       <br />
 
       <p>
