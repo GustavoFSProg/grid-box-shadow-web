@@ -23,6 +23,7 @@ export const Button = styled.button`
 
 function Profile() {
   const [product, setProducts] = useState({})
+  const [change, setChange] = useState('')
 
   const ID = localStorage.getItem('Id')
   async function handleProfile() {
@@ -33,9 +34,15 @@ function Profile() {
     console.log(product)
   }
 
+  function handleInput() {
+    console.log(change)
+    alert(change)
+  }
+
   useEffect(() => {
     handleProfile()
   }, [])
+
 
   return (
     <>
@@ -86,7 +93,7 @@ function Profile() {
               <h2>R$ {product.price}</h2>
               <h4>Quantidade</h4>
 
-              <input type="number" placeholder="1" height="150"
+              <input type="number" onChange={(e) => setChange(e.target.value)} placeholder="1" height="150"
                 style={{
                   width: "70px", fontSize: "18px",
                   paddingLeft: '18px',
@@ -96,7 +103,7 @@ function Profile() {
                   paddingBottom: '10px'
                 }} />
             </div>
-            <Button>Adicionar ao Carrinho</Button>
+            <Button onClick={handleInput}>Adicionar ao Carrinho</Button>
 
           </div>
         </div>
