@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import api from './server/api'
 import Header from './components/Header/Header'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 
 export const Button = styled.button`   
  display: flex;
@@ -21,13 +22,20 @@ export const Button = styled.button`
 ` 
 
 
+const preco = 100
+
 function Profile() {
   const [product, setProducts] = useState({})
   const [change, setChange] = useState('')
 
+  const navigate = useNavigate()
+
+
   const ID = localStorage.getItem('Id')
   async function handleProfile() {
     const { data } = await api.get(`/profile/${ID}`)
+
+
 
     setProducts(data)
 
@@ -36,7 +44,13 @@ function Profile() {
 
   function handleInput() {
     console.log(change)
-    alert(change)
+    alert(change * preco)
+
+    const priceItem = change * preco
+
+    navigate('/cart')
+
+
   }
 
   useEffect(() => {
@@ -47,7 +61,6 @@ function Profile() {
   return (
     <>
       <Header />
-
       <div
         style={{
           display: 'flex',
@@ -56,9 +69,9 @@ function Profile() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          marginTop: '-30px'
         }}
       >
-        <br />
 
         <div
           style={{
